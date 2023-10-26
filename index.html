@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+    <main class="container">
+        <section class="menuEdad">
+            <h1>Calcular Edad</h1>
+
+            <form id="edadForm">
+                <p class="parrafo"> Digite su Fecha de Nacimiento:</p>
+
+
+                <input type="date" id="fechaNacimiento" required class="form_input">
+                <button type="submit" id="boton" class="boton_input">Calcular</button>
+            </form>
+            <h2 id="resultadoEdad">Edad Actual</h2>
+        </section>
+
+
+        <section class="crud">
+            <h1 class="titulo">Registro de Usuarios</h1>
+            <form id="formRegistro" action="" class="formulario_crud">
+                <input type="text" placeholder="Nombre" id="nombreInput" class="form_input">
+                <input type="text" placeholder="Apellidos" id="apellidoInput" class="form_input">
+                <input type="tel" placeholder="Telefono" id="telefonoInput" class="form_input">
+                <input type="email" placeholder="Correo" id="emailInput" class="form_input">
+                <button type="submit" id="boton" class="boton_input">Guardar</button>
+            </form>
+            <table class="crud_tabla">
+                <thead>
+                    <tr>
+                        <th class="table">Nombre</th>
+                        <th class="table">Apellidos</th>
+                        <th class="table">Telefono</th>
+                        <th class="table">Correo</th>
+                        <th class="table"></th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody" class="table_body">
+
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+    <script src="./assets/script.js"> </script>
+</body>
+
+</html>
